@@ -9,8 +9,13 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.PayActivity
 import com.example.appcomida.R
+import com.example.appcomida.Utilities
+import com.example.appcomida.adapters.CartAdapter
+import com.example.appcomida.adapters.MenuItemAdapter
 import com.example.appcomida.databinding.FragmentCartBinding
 
 class CartFragment : Fragment() {
@@ -24,11 +29,18 @@ class CartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        val recyclerView: RecyclerView? = requireView().findViewById(R.id.recyclerView)
+        recyclerView!!.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
+        val adapter = CartAdapter(Utilities.userCart.items, requireContext())
+        recyclerView.adapter = adapter
+        requireView().findViewById<TextView>(R.id.subtotal).text = requireContext().getString(R.string.price, Utilities.Subtotal().toString())
         getView()?.findViewById<Button>(R.id.go_to_pay_btn)?.setOnClickListener {
             val intent = Intent(activity, PayActivity::class.java)
             startActivity(intent)
         }
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,

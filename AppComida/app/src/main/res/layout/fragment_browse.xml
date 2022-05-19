@@ -15,11 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_baseline_search_24"
-        android:hint="@string/browse_search_hint">
+        android:hint="@string/browse_search_hint"
+        app:helperText="@string/algolia"
+        app:helperTextTextColor="@color/red">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/search_input"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionSearch">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,11 +35,11 @@
         android:text="@string/browse_top_categories"
         android:textSize="20sp"/>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <GridLayout
+        android:id="@+id/category_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:columnCount="2">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -46,6 +50,6 @@
             tools:layout_editor_absoluteX="56dp"
             tools:layout_editor_absoluteY="424dp" />
 
-    </LinearLayout>
+    </GridLayout>
 
 </LinearLayout>

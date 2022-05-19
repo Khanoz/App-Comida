@@ -64,6 +64,7 @@
             android:background="@android:color/darker_gray"/>
 
         <LinearLayout
+            android:id="@+id/orders"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/activity_horizontal_margin"
@@ -80,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="50dp"
                 android:layout_gravity="center"
-                android:text="@string/account_payment"/>
+                android:text="@string/account_orders"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -106,30 +107,7 @@
                 android:layout_gravity="center"
                 android:text="@string/account_help"/>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="@dimen/activity_horizontal_margin"
-            android:paddingEnd="@dimen/activity_horizontal_margin"
-            android:paddingTop="32dp"
-            android:paddingBottom="32dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_sell_24"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:layout_gravity="center"
-                android:text="@string/account_promotions"/>
-        </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -159,6 +137,27 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_logout_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:layout_gravity="center"
+                android:text="@string/logout"/>
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

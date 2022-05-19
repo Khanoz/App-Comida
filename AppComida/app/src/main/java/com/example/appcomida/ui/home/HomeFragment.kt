@@ -7,6 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.appcomida.R
+import com.example.appcomida.Restaurant
+import com.example.appcomida.Utilities
+import com.example.appcomida.adapters.RestaurantAdapater
 import com.example.appcomida.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -30,6 +36,22 @@ class HomeFragment : Fragment() {
 
 
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val recyclerView: RecyclerView? = requireView().findViewById(R.id.recyclerView)
+        recyclerView!!.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
+        Utilities.restaurantsRef.orderBy("rating").addSnapshotListener { value, error ->
+            val restaurants = value!!.toObjects(Restaurant::class.java)
+
+            restaurants.forEachIndexed { index, post ->
+                post.uid = value.documents[index].id
+            }
+            val adapter = RestaurantAdapater(restaurants, requireContext())
+            recyclerView.adapter = adapter
+        }
     }
 
     override fun onDestroyView() {

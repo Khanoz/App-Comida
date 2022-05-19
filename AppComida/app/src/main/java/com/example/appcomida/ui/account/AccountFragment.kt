@@ -9,10 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
-import com.example.appcomida.LocationsActivity
-import com.example.appcomida.PayActivity
-import com.example.appcomida.R
-import com.example.appcomida.RegisterLocationActivity
+import com.example.appcomida.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class AccountFragment : Fragment() {
 
@@ -28,6 +28,17 @@ class AccountFragment : Fragment() {
         getView()?.findViewById<LinearLayout>(R.id.locations)?.setOnClickListener {
             val intent = Intent(activity, LocationsActivity::class.java)
             startActivity(intent)
+        }
+        getView()?.findViewById<LinearLayout>(R.id.orders)?.setOnClickListener {
+            val intent = Intent(activity, ViewOrdersActivity::class.java)
+            startActivity(intent)
+        }
+        requireView().findViewById<LinearLayout>(R.id.logout).setOnClickListener {
+            val auth = Firebase.auth
+            auth.signOut()
+            val intent = Intent(activity, LoginActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
         }
     }
 

@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">AppComida</string>
-    <string name="none">none</string>
+    <string name="price">$%s</string>
     <string name="title_navHome">Home</string>
     <string name="title_navBrowse">Browse</string>
     <string name="title_navCart">Cart</string>
     <string name="title_navAccount">Account</string>
     <string name="account_name">Nombre</string>
     <string name="account_favorites">Your Favorites</string>
-    <string name="account_payment">Payment Method</string>
+    <string name="logout">Logout</string>
+    <string name="account_orders">Your Orders</string>
     <string name="account_help">Help</string>
     <string name="account_promotions">Promotions</string>
     <string name="account_locations">Locations</string>
@@ -33,7 +34,26 @@
     <string name="tips">Tips</string>
     <string name="order">Order</string>
     <string name="address_hint">Address</string>
+    <string name="address_name">Address Name</string>
     <string name="address_number_hint">House or apartment number</string>
     <string name="zipcode_hint">Zip code</string>
     <string name="register_location">Register Location</string>
+    <string name="default_category">Category</string>
+    <string name="search">Search2</string>
+    <string name="algolia">Debido a la limitante de tener que vincular la tarjeta a firebase para la busqueda de strings con algolia los nombres de restaurantes deben de ser exactos</string>
+    <string name="restaurant">Restaurant name</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="rating">5.0</string>
+    <string name="schedule">Schedule: %s - %s</string>
+    <string name="tap_for_address">Tap for address</string>
+    <string name="unavailable_orders">Unavailable Orders</string>
+    <string name="text">%s</string>
+    <string name="special_instructions">Special Instructions</string>
+    <string name="add_note">Add note...</string>
+    <string name="add_to_cart">Add %s to cart - $%s</string>
+    <string name="cart_item_name">%s x%s</string>
+    <string name="big_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

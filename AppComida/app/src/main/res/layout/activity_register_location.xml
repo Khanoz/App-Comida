@@ -10,19 +10,40 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     tools:context=".RegisterLocationActivity">
 
-    <ImageButton
-        android:id="@+id/back_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:src="@drawable/ic_baseline_arrow_back_24"
-        android:background="@null" />
 
-    <ImageView
-        android:layout_width="380dp"
-        android:layout_height="300dp"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:src="@drawable/ic_launcher_background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@null" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="@string/address_name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="@dimen/map_size"
+        android:layout_height="@dimen/map_size"/>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
