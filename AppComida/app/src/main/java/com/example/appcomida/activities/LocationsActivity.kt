@@ -1,4 +1,4 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,9 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appcomida.adapters.MenuItemAdapter
+import com.example.appcomida.R
+import com.example.appcomida.dataClasses.UserLocation
+import com.example.appcomida.Utilities
 import com.example.appcomida.adapters.UserLocationAdapter
 
 class LocationsActivity : AppCompatActivity() {

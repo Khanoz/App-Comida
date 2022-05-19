@@ -1,4 +1,4 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,14 +6,16 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.appcomida.R
+import com.example.appcomida.Utilities
 import com.example.appcomida.adapters.CartAdapter
+import com.example.appcomida.dataClasses.Order
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.firebase.firestore.Exclude
 
 class PayActivity : AppCompatActivity(), OnMapReadyCallback {
     val fees: Int = 25

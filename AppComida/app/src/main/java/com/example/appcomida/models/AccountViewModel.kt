@@ -1,4 +1,4 @@
-package com.example.appcomida.ui.account
+package com.example.appcomida.models
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.example.appcomida.ui.cart
+package com.example.appcomida.models
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

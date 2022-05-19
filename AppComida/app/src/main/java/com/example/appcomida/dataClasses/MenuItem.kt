@@ -1,4 +1,4 @@
-package com.example.appcomida
+package com.example.appcomida.dataClasses
 
 import com.google.firebase.firestore.Exclude
 import com.google.firebase.firestore.GeoPoint

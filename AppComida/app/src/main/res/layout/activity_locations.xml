@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".LocationsActivity">
+    tools:context=".activities.LocationsActivity">
 
     <ImageButton
         android:id="@+id/back_btn"

@@ -1,4 +1,4 @@
-package com.example.appcomida.ui.account
+package com.example.appcomida.fragments
 
 import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
@@ -7,10 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.LinearLayout
 import com.example.appcomida.*
-import com.google.firebase.auth.FirebaseAuth
+import com.example.appcomida.activities.LocationsActivity
+import com.example.appcomida.activities.ViewOrdersActivity
+import com.example.appcomida.models.AccountViewModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 

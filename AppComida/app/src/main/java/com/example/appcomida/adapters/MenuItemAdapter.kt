@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.*
+import com.example.appcomida.activities.RestaurantMenuActivity
+import com.example.appcomida.dataClasses.MenuItem
 import com.google.android.material.textview.MaterialTextView
 import com.squareup.picasso.Picasso
 

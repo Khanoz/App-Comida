@@ -1,10 +1,12 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import com.example.appcomida.databinding.ActivityMapsBinding
+import com.example.appcomida.R
+import com.example.appcomida.dataClasses.UserLocation
+import com.example.appcomida.Utilities
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -12,7 +14,6 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.textfield.TextInputEditText
-import com.google.firebase.firestore.Exclude
 import com.google.firebase.firestore.GeoPoint
 
 class RegisterLocationActivity : AppCompatActivity(), OnMapReadyCallback {

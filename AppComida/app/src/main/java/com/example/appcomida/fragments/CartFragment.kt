@@ -1,4 +1,4 @@
-package com.example.appcomida.ui.cart
+package com.example.appcomida.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appcomida.PayActivity
+import com.example.appcomida.activities.PayActivity
 import com.example.appcomida.R
 import com.example.appcomida.Utilities
 import com.example.appcomida.adapters.CartAdapter
-import com.example.appcomida.adapters.MenuItemAdapter
 import com.example.appcomida.databinding.FragmentCartBinding
+import com.example.appcomida.models.CartViewModel
 
 class CartFragment : Fragment() {
 

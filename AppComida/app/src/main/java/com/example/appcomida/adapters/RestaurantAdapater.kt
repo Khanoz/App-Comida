@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.*
+import com.example.appcomida.activities.RestaurantMenuActivity
+import com.example.appcomida.dataClasses.Restaurant
 import com.squareup.picasso.Picasso
 
 class RestaurantAdapater(val restaurants: List<Restaurant>, val cont : Context) : RecyclerView.Adapter<RestaurantAdapater.ViewHolder>(){

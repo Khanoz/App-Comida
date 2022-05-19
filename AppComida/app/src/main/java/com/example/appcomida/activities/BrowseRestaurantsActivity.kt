@@ -1,10 +1,13 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.appcomida.R
+import com.example.appcomida.dataClasses.Restaurant
+import com.example.appcomida.Utilities
 import com.example.appcomida.adapters.RestaurantAdapater
 import com.google.firebase.firestore.Query
 

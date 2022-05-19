@@ -8,7 +8,7 @@
     android:paddingStart="@dimen/activity_horizontal_margin"
     android:paddingEnd="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
-    tools:context=".BrowseRestaurantsActivity">
+    tools:context=".activities.BrowseRestaurantsActivity">
 
     <TextView
         android:id="@+id/search_title"

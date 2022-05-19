@@ -1,4 +1,4 @@
-package com.example.appcomida
+package com.example.appcomida.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import com.example.appcomida.R
+import com.example.appcomida.Utilities
+import com.example.appcomida.dataClasses.cartItem
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
@@ -65,7 +68,7 @@ class MenuItemFragment : Fragment() {
 
     fun updateQuantityText(){
         quantityText.text = getString(R.string.text, quantity.toString())
-        addCartButton.text = getString(R.string.add_to_cart, quantity.toString(), (quantity*Utilities.selectedMenuItem.price!!).toString())
+        addCartButton.text = getString(R.string.add_to_cart, quantity.toString(), (quantity* Utilities.selectedMenuItem.price!!).toString())
     }
 
     fun setMenuItemValues(){

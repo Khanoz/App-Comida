@@ -4,12 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.R
-import com.example.appcomida.cartItem
+import com.example.appcomida.dataClasses.cartItem
 import com.google.android.material.textview.MaterialTextView
-import com.squareup.picasso.Picasso
 
 class PayAdapter(val cart: List<cartItem>, val cont : Context) : RecyclerView.Adapter<PayAdapter.ViewHolder>(){
 

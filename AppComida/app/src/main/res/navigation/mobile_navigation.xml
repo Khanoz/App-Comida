@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.appcomida.ui.home.HomeFragment"
+        android:name="com.example.appcomida.fragments.HomeFragment"
         android:label="@string/title_navHome"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_browse"
-        android:name="com.example.appcomida.ui.browse.BrowseFragment"
+        android:name="com.example.appcomida.fragments.BrowseFragment"
         android:label="@string/title_navBrowse"
         tools:layout="@layout/fragment_browse" />
 
     <fragment
         android:id="@+id/navigation_cart"
-        android:name="com.example.appcomida.ui.cart.CartFragment"
+        android:name="com.example.appcomida.fragments.CartFragment"
         android:label="@string/title_navCart"
         tools:layout="@layout/fragment_cart" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.example.appcomida.ui.account.AccountFragment"
+        android:name="com.example.appcomida.fragments.AccountFragment"
         android:label="@string/title_navAccount"
         tools:layout="@layout/fragment_account" />
 

@@ -1,29 +1,21 @@
-package com.example.appcomida.ui.browse
+package com.example.appcomida.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentContainer
-import androidx.fragment.app.FragmentController
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.adapter.FragmentViewHolder
 import com.example.appcomida.*
+import com.example.appcomida.activities.BrowseRestaurantsActivity
 import com.example.appcomida.adapters.CategoryAdapter
-import com.example.appcomida.adapters.RestaurantAdapater
+import com.example.appcomida.dataClasses.Category
 import com.example.appcomida.databinding.FragmentBrowseBinding
+import com.example.appcomida.models.BrowseViewModel
 import com.google.android.material.textfield.TextInputEditText
 
 class BrowseFragment : Fragment() {

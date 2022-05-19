@@ -1,19 +1,19 @@
-package com.example.appcomida.ui.home
+package com.example.appcomida.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.R
-import com.example.appcomida.Restaurant
+import com.example.appcomida.dataClasses.Restaurant
 import com.example.appcomida.Utilities
 import com.example.appcomida.adapters.RestaurantAdapater
 import com.example.appcomida.databinding.FragmentHomeBinding
+import com.example.appcomida.models.HomeViewModel
 
 class HomeFragment : Fragment() {
 

@@ -1,12 +1,11 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.appcomida.R
 import com.example.appcomida.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

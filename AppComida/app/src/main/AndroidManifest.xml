@@ -32,28 +32,28 @@
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".ViewOrdersActivity"
+            android:name=".activities.ViewOrdersActivity"
             android:exported="false" />
         <activity
-            android:name=".RestaurantMenuActivity"
+            android:name=".activities.RestaurantMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".BrowseRestaurantsActivity"
+            android:name=".activities.BrowseRestaurantsActivity"
             android:exported="false" />
         <activity
-            android:name=".LocationsActivity"
+            android:name=".activities.LocationsActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterLocationActivity"
+            android:name=".activities.RegisterLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".PayActivity"
+            android:name=".activities.PayActivity"
             android:exported="false" />
         <activity
-            android:name=".RecoverPasswordActivity"
+            android:name=".activities.RecoverPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -65,7 +65,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true" />
     </application>
 

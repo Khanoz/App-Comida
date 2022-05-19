@@ -4,13 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appcomida.R
-import com.example.appcomida.UserLocation
-import com.example.appcomida.cartItem
+import com.example.appcomida.dataClasses.UserLocation
 import com.google.android.material.textview.MaterialTextView
-import com.squareup.picasso.Picasso
 
 class UserLocationAdapter(val location: List<UserLocation>, val cont : Context) : RecyclerView.Adapter<UserLocationAdapter.ViewHolder>(){
 

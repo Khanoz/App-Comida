@@ -1,4 +1,4 @@
-package com.example.appcomida
+package com.example.appcomida.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,12 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.appcomida.R
+import com.example.appcomida.Utilities
+import com.example.appcomida.activities.MainActivity
+import com.example.appcomida.activities.RecoverPasswordActivity
+import com.example.appcomida.activities.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.actionCodeSettings
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
